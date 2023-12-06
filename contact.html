@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/cabecalho.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <title>Sobre Nós=</title>
+    <script src="scripts/cabecalho.js" defer></script>
+  </head>
+  <body>
+    <div class="grid-container-cabecalho">
+      <div class="grid-item item-1">
+        <nav>
+          <a href="index.html">
+            <img
+              class="cabecalho-logo"
+              src="assets/carolines-logoo.png"
+              alt="Logo da Minha Empresa"
+            />
+          </a>
+        </nav>
+      </div>
+      <div class="grid-item item-2">
+        <nav class="cabecalho-menu">
+          <a class="cabecalho-menu-link" href="index.html">Home</a>
+          <a class="cabecalho-menu-link" href="about.html">Sobre</a>
+          <a class="cabecalho-menu-link cabecalho-invisivel" href="#"
+            >Casacos</a
+          >
+          <a class="cabecalho-menu-link cabecalho-invisivel" href="#"
+            >Saídas de Praia</a
+          >
+          <a class="cabecalho-menu-link cabecalho-invisivel" href="#">Blusas</a>
+          <a class="cabecalho-menu-link cabecalho-invisivel" href="#">Saias</a>
+          <a class="cabecalho-menu-link cabecalho-invisivel" href="#"
+            >Vestidos</a
+          >
+          <a class="cabecalho-menu-link" href="contact.html">Contato</a>
+          <div class="dropdown-container">
+            <a class="cabecalho-menu-link dropdown-button">Roupas</a>
+            <div class="dropdown-content">
+              <a href="#">Casacos</a>
+              <a href="#">Saídas de Praia</a>
+              <a href="#">Blusas</a>
+              <a href="#">Saias</a>
+              <a href="#">Vestidos</a>
+            </div>
+          </div>
+
+          <button
+            id="botao-fazer-login-toggle"
+            onclick="exibirLoginFlutuante()"
+          >
+            Fazer Login
+          </button>
+        </nav>
+      </div>
+      <div class="grid-item item-3">
+        <div class="menu-toggle menu-toggle-grid" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <nav class="cabecalho-login">
+          <input
+            type="text"
+            class="cabecalho-login-input"
+            placeholder="Login"
+          />
+          <input
+            type="password"
+            class="cabecalho-login-input"
+            placeholder="Senha"
+          />
+          <button
+            class="cabecalho-login-button"
+            onclick="window.location.href='login.html'"
+          >
+            Entrar
+          </button>
+        </nav>
+
+        <nav class="cabecalho-login-flutuante">
+          <input
+            type="text"
+            class="cabecalho-login-input-flutuante"
+            placeholder="Login"
+          />
+          <input
+            type="password"
+            class="cabecalho-login-input-flutuante"
+            placeholder="Senha"
+          />
+          <button
+            class="cabecalho-login-button-flutuante"
+            onclick="window.location.href='login.html'"
+          >
+            Entrar
+          </button>
+        </nav>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-item item-4"><h1>Contato</h1></div>
+      <div class="grid-item item-5">
+        <p>Mande e-mail para carolines.roupas.femininas@gmail.com</p>
+      </div>
+      <div class="grid-item item-6"></div>
+      <div class="grid-item item-7">
+        <img src="assets/roupa2.jpg" class="roupa" alt="" />
+      </div>
+      <div class="grid-item item-8"></div>
+      <div class="grid-item item-9"></div>
+      <div class="grid-item item-10">
+        <h2>Formas de Pagamento</h2>
+        <ul>
+          <li>Pix</li>
+          <li>Crédito</li>
+          <li>Débito</li>
+          <li>Transferência</li>
+        </ul>
+      </div>
+      <div class="grid-item item-11"></div>
+      <div class="grid-item item-12">
+        <footer class="rodape">
+          <p>Carolines Roupas Femininas ® Matheus OS Developer</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

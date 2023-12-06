@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/cabecalho.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <title>Sobre Nós=</title>
+    <script src="scripts/cabecalho.js" defer></script>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav>
+        <a href="index.html">
+          <img
+            class="cabecalho-logo"
+            src="assets/carolines-logoo.png"
+            alt="Logo da Minha Empresa"
+          />
+        </a>
+      </nav>
+
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav class="cabecalho-menu">
+        <a class="cabecalho-menu-link" href="index.html">Home</a>
+        <a class="cabecalho-menu-link" href="about.html">Sobre</a>
+        <a class="cabecalho-menu-link cabecalho-invisivel" href="#">Casacos</a>
+        <a class="cabecalho-menu-link cabecalho-invisivel" href="#"
+          >Saídas de Praia</a
+        >
+        <a class="cabecalho-menu-link cabecalho-invisivel" href="#">Blusas</a>
+        <a class="cabecalho-menu-link cabecalho-invisivel" href="#">Saias</a>
+        <a class="cabecalho-menu-link cabecalho-invisivel" href="#">Vestidos</a>
+        <a class="cabecalho-menu-link" href="contact.html">Contato</a>
+        <div class="dropdown-container">
+          <a class="cabecalho-menu-link dropdown-button">Roupas</a>
+          <div class="dropdown-content">
+            <a href="#">Casacos</a>
+            <a href="#">Saídas de Praia</a>
+            <a href="#">Blusas</a>
+            <a href="#">Saias</a>
+            <a href="#">Vestidos</a>
+          </div>
+        </div>
+
+        <button id="botao-fazer-login-toggle" onclick="exibirLoginFlutuante()">
+          Fazer Login
+        </button>
+      </nav>
+
+      <nav class="cabecalho-login">
+        <input type="text" class="cabecalho-login-input" placeholder="Login" />
+        <input
+          type="password"
+          class="cabecalho-login-input"
+          placeholder="Senha"
+        />
+        <button
+          class="cabecalho-login-button"
+          onclick="window.location.href='login.html'"
+        >
+          Entrar
+        </button>
+      </nav>
+
+      <nav class="cabecalho-login-flutuante">
+        <input
+          type="text"
+          class="cabecalho-login-input-flutuante"
+          placeholder="Login"
+        />
+        <input
+          type="password"
+          class="cabecalho-login-input-flutuante"
+          placeholder="Senha"
+        />
+        <button
+          class="cabecalho-login-button-flutuante"
+          onclick="window.location.href='login.html'"
+        >
+          Entrar
+        </button>
+      </nav>
+    </header>
+
+    <div class="boas-vindas">
+      <h1>Sobre Nós</h1>
+      <p>
+        Bem-vindas à <strong>Carolines Roupas Femininas</strong>, o seu destino
+        de moda online, onde a elegância e o estilo se encontram em cada peça
+        que oferecemos. Fundada com a paixão pela moda feminina e pelo conforto,
+        nossa loja se esforça para trazer a você uma experiência de compra
+        online única e uma seleção cuidadosamente curada de roupas para todas as
+        ocasiões. Moda para Cada Estação
+      </p>
+
+      <p>
+        Na <b>Carolines Roupas Femininas</b>, acreditamos que a moda não tem
+        limites. Oferecemos uma variedade de peças que atendem às necessidades
+        de cada estação, desde saídas de praia leves e coloridas que são
+        perfeitas para dias ensolarados até casacos aconchegantes e blusas
+        elegantes para mantê-la aquecida e estilosa nos meses mais frios.
+      </p>
+      <p>
+        Nossa coleção é atualizada regularmente para acompanhar as últimas
+        tendências da moda. Valorizamos a qualidade e o estilo em igual medida.
+        Todas as nossas roupas são cuidadosamente selecionadas para garantir que
+        você obtenha o melhor em termos de durabilidade, conforto e design.
+      </p>
+      <p>
+        Oferecemos uma plataforma de compras online intuitiva e segura,
+        permitindo que você faça compras no conforto da sua casa, a qualquer
+        hora do dia. Com entrega rápida e opções de pagamento seguras, tornamos
+        a experiência de compra online simples e descomplicada. Atendimento ao
+        Cliente de Excelência Nosso compromisso não termina no momento da
+        compra. Estamos aqui para ajudá-la em todas as etapas, desde escolher o
+        tamanho certo até responder a perguntas sobre nossos produtos. Nossa
+        equipe de atendimento ao cliente está pronta para oferecer suporte e
+        assistência sempre que você precisar.
+      </p>
+    </div>
+    <div class="div-imagem-about">
+      <img src="assets/roupa1.jpg" class="imagem-about" alt="" />
+    </div>
+
+    <div class="div-estacoes">
+      <h2>Roupas para todas as Estações</h2>
+      <ul>
+        <li>Primavera</li>
+        <li>Verão</li>
+        <li>Outono</li>
+        <li>Inverno</li>
+      </ul>
+    </div>
+
+    <footer class="rodape-">
+      <p>Carolines Roupas Femininas ® Matheus OS Developer</p>
+    </footer>
+  </body>
+</html>

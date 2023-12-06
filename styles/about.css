@@ -1,0 +1,44 @@
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #d89b70;
+    color: black;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .boas-vindas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+  }
+  
+  .div-imagem-about {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imagem-about {
+    width: 500px;
+    height: auto;
+  }
+  
+  .div-estacoes {
+    display: grid;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .rodape- {
+    background-color: #f8f5fa;
+    padding: 24px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    position: relative;
+  }
+  

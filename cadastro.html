@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/cabecalho.css" />
+    <link rel="stylesheet" href="styles/cadastro.css" />
+    <title>Cadastro de Roupas=</title>
+    <script src="scripts/cadastro.js" defer></script>
+    <script src="scripts/cabecalho.js" defer></script>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav>
+        <a href="index.html">
+          <img
+            class="cabecalho-logo"
+            src="assets/carolines-logoo.png"
+            alt="Logo da Minha Empresa"
+          />
+        </a>
+      </nav>
+
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav class="cabecalho-menu">
+        <a class="cabecalho-menu-link" href="index.html">Home</a>
+        <a class="cabecalho-menu-link" href="about.html">Sobre</a>
+        <a class="cabecalho-menu-link cabecalho-invisivel" href="#">Casacos</a>
+        <a class="cabecalho-menu-link cabecalho-invisivel" href="#"
+          >Saídas de Praia</a
+        >
+        <a class="cabecalho-menu-link cabecalho-invisivel" href="#">Blusas</a>
+        <a class="cabecalho-menu-link cabecalho-invisivel" href="#">Saias</a>
+        <a class="cabecalho-menu-link cabecalho-invisivel" href="#">Vestidos</a>
+        <a class="cabecalho-menu-link" href="contact.html">Contato</a>
+        <div class="dropdown-container">
+          <a class="cabecalho-menu-link dropdown-button">Roupas</a>
+          <div class="dropdown-content">
+            <a href="#">Casacos</a>
+            <a href="#">Saídas de Praia</a>
+            <a href="#">Blusas</a>
+            <a href="#">Saias</a>
+            <a href="#">Vestidos</a>
+          </div>
+        </div>
+
+        <button id="botao-fazer-login-toggle" onclick="exibirLoginFlutuante()">
+          Fazer Login
+        </button>
+      </nav>
+
+      <nav class="cabecalho-login">
+        <input type="text" class="cabecalho-login-input" placeholder="Login" />
+        <input
+          type="password"
+          class="cabecalho-login-input"
+          placeholder="Senha"
+        />
+        <button
+          class="cabecalho-login-button"
+          onclick="window.location.href='login.html'"
+        >
+          Entrar
+        </button>
+      </nav>
+
+      <nav class="cabecalho-login-flutuante">
+        <input
+          type="text"
+          class="cabecalho-login-input-flutuante"
+          placeholder="Login"
+        />
+        <input
+          type="password"
+          class="cabecalho-login-input-flutuante"
+          placeholder="Senha"
+        />
+        <button
+          class="cabecalho-login-button-flutuante"
+          onclick="window.location.href='login.html'"
+        >
+          Entrar
+        </button>
+      </nav>
+    </header>
+
+    <a class="botao-voltar-area-trabalho" href="login.html">
+      <- Voltar para a Área de Trabalho</a
+    >
+
+    <a class="botao-voltar-area-trabalho" href="listagem.html">
+      Listagem de Estoque</a
+    >
+    <br />
+    <div class="div-cadastro">
+      <h1>CADASTRO</h1>
+      <p>Inclua as novas peças</p>
+      <br />
+    </div>
+    <div class="div-formulario">
+      <form id="formulario-cadastrar-roupa" action="">
+        <fieldset>
+          <legend>Informações da Peça</legend>
+          <label for="id">Insira o ID</label>
+          <input type="number" id="id" name="id" required />
+
+          <label for="nome-peca">Insira o nome da peça</label>
+          <input type="text" id="nome-peca" name="nome-peca" required />
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Tipo de Roupa</legend>
+          <p>Escolha o tipo de roupa</p>
+
+          <input type="radio" name="peca" value="saia" /> Saia
+          <input type="radio" name="peca" value="blusa" /> Blusa
+          <input type="radio" name="peca" value="vestido" /> Vestido
+          <input type="radio" name="peca" value="saida-de-praia" /> Saída de
+          Praia <input type="radio" name="peca" value="casaco" /> Casaco
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Cores</legend>
+          <p>Cores</p>
+
+          <input type="radio" name="cor" value="vermelho" /> Vermelho
+          <input type="radio" name="cor" value="branco" /> Branco
+          <input type="radio" name="cor" value="preto" /> Preto
+          <input type="radio" name="cor" value="azul" /> Azul
+          <input type="radio" name="cor" value="outro" /> Outro
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>Quantidade</legend>
+          <label for="quantidade">Quantidade</label>
+          <input type="number" id="quantidade" name="quantidade" required />
+        </fieldset>
+        <br />
+
+        <div class="div-botao-enviar-form">
+          <input id="botao-enviar-form" type="submit" value="Cadastrar" />
+        </div>
+      </form>
+    </div>
+    <br />
+    <div id="mensagem"></div>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #d89b70;
+    color: black;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .div-cadastro {
+    margin-top: 15px;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .botoes-menu-login {
+    border: solid red 2px;
+    display: flex;
+    justify-content: space-around;
+    /*align-items: center;*/
+  }
+  
+  .botao-menu-login {
+    background-color: coral;
+    color: white;
+    font-weight: bold;
+    padding: 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 20px;
+  }
+  
+  .botao-voltar-area-trabalho {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    text-decoration: none;
+    border: coral solid 4px;
+    border-radius: 20px;
+  }
+  
+  .botao-voltar-area-trabalho:hover {
+    background-color: rgb(82, 82, 203);
+  }
+  
+  #botao-enviar-form {
+    background-color: coral;
+    color: white;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+  }
+  
+  #botao-enviar-form:hover {
+    background-color: orange;
+    color: white;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+  }
+  
+  .div-botao-enviar-form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #mensagem {
+    display: none;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .div-formulario {
+    padding: 20px;
+  }
+  

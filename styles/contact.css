@@ -1,0 +1,86 @@
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #d89b70;
+    color: black;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .grid-container-cabecalho {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #f8f5fa;
+    border: 1px solid #000;
+    border-left: none;
+    border-right: none;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr 350px 2fr 1fr;
+    background-color: #d89b70;
+  }
+  
+  .grid-item {
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .item-1 {
+    grid-column: span 1;
+    background-color: #f8f5fa;
+    margin: 10px;
+  }
+  
+  .item-2 {
+    grid-column: span 3;
+    background-color: #f8f5fa;
+  }
+  
+  .item-3 {
+    grid-column: span 1;
+    background-color: #f8f5fa;
+    display: flex;
+    justify-content: end;
+    margin-left: 20px;
+  }
+  
+  .menu-toggle-grid {
+    margin: 15px 20px 0 0;
+  }
+  
+  .item-4 {
+    grid-column: span 5;
+  }
+  .item-5 {
+    grid-column: span 5;
+  }
+  .item-7 {
+    grid-column: span 3;
+  }
+  .roupa {
+    width: 250px;
+    height: auto;
+  }
+  .item-10 {
+    grid-column: span 3;
+  }
+  .item-12 {
+    grid-column: span 5;
+  }
+  
+  .rodape {
+    color: black;
+    background-color: #f8f5fa;
+    padding: 24px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    position: relative;
+  }
+  

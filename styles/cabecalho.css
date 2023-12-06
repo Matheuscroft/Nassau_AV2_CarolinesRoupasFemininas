@@ -1,0 +1,239 @@
+body{
+    margin: 0;
+  }
+
+  .cabecalho {
+    padding: 10px 40px 10px 40px;
+    background-color: #f8f5fa;
+    border: 1px solid #000;
+    border-left: none;
+    border-right: none;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cabecalho-logo {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 50px;
+  }
+  
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+  }
+  
+  .cabecalho-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    right: 0;
+    background-color: #f8f5fa;
+    text-align: center;
+    z-index: 1;
+    gap: 30px;
+  }
+  
+  .cabecalho-menu-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: gray;
+    text-decoration: none;
+    padding: 15px;
+  }
+  
+  .cabecalho-invisivel {
+    display: flex;
+  }
+  
+  .dropdown-container {
+    display: none;
+  }
+  
+  .dropdown-button {
+    display: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+  }
+  
+  #botao-fazer-login-toggle {
+    padding: 20px;
+    border: solid #fa6d4e 5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .cabecalho-login-flutuante {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f8f5fa;
+    text-align: center;
+    z-index: 1;
+    padding: 15%;
+  }
+  
+  .cabecalho-login-input-flutuante {
+    margin: 10px;
+    padding: 15px 30px;
+  }
+  
+  .cabecalho-login-button-flutuante {
+    padding: 15px 30px;
+    margin: 10px;
+  }
+  
+  .cabecalho-login {
+    display: none;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .cabecalho-login {
+      display: none;
+    }
+  
+    #botao-fazer-login-toggle {
+      display: flex;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+  
+    .menu-toggle {
+      display: none;
+    }
+  
+    .cabecalho-menu {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+      position: static;
+      box-sizing: border-box;
+      justify-content: center;
+      row-gap: normal;
+    }
+  
+    .cabecalho-invisivel {
+      display: none;
+    }
+  
+    .dropdown-container {
+      position: relative;
+      display: inline-block;
+    }
+  
+    .dropdown-button {
+      display: flex;
+      cursor: pointer;
+    }
+  
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      padding: 10px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+  
+    .dropdown-content a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: #333;
+    }
+  
+    .dropdown-content a:hover {
+      background-color: #d89b70;
+    }
+  
+    .dropdown-container:hover .dropdown-content {
+      display: block;
+    }
+  }
+  
+  @media screen and (min-width: 850px) {
+    .cabecalho-login {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .cabecalho-menu {
+      gap: 50px;
+    }
+  
+    #botao-fazer-login-toggle {
+      display: none;
+    }
+  
+    .cabecalho-login {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-left: 15px;
+    }
+  
+    .cabecalho-login input {
+      margin: 0 10px 10px 10px;
+      height: 28px;
+      width: 150px;
+    }
+  
+    .cabecalho-login button {
+      height: 32px;
+      background-color: #d89b70;
+      color: white;
+      border: none;
+      padding: 0 15px;
+      cursor: pointer;
+    }
+  
+    .cabecalho-login button:hover {
+      background-color: #555;
+    }
+  }
+  
+  @media screen and (min-width: 930px) {
+    .cabecalho-menu {
+      flex-wrap: nowrap;
+    }
+  }
+  
+  @media screen and (min-width: 1170px) {
+    .cabecalho-login {
+      flex-direction: row;
+    }
+  
+    .cabecalho-login input {
+      margin: 0 10px 0 0;
+    }
+  }
+  

@@ -1,0 +1,59 @@
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #d89b70;
+    color: black;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .botao-voltar-area-trabalho {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    text-decoration: none;
+    border: coral solid 4px;
+    border-radius: 20px;
+  }
+  
+  .botao-voltar-area-trabalho:hover {
+    background-color: rgb(82, 82, 203);
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  ul div {
+    border: solid red 2px;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: rgb(105, 158, 224);
+    border-radius: 10px;
+  }
+  
+  #div-botao-listagem {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #botao-listar {
+    padding: 15px;
+    background-color: coral;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  

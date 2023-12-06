@@ -1,0 +1,32 @@
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #d89b70;
+    color: black;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .div-bem-vindo {
+    color: white;
+    font-weight: bold;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .botoes-pagina-login {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .botao-pagina-login {
+    background-color: coral;
+    color: white;
+    font-weight: bold;
+    padding: 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 20px;
+  }
+  

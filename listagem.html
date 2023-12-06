@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/cabecalho.css" />
+    <link rel="stylesheet" href="styles/listagem.css" />
+    <title>Sobre Nós=</title>
+    <script src="scripts/listagem.js" defer></script>
+    <script src="scripts/cabecalho.js" defer></script>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav>
+        <a href="index.html">
+          <img
+            class="cabecalho-logo"
+            src="assets/carolines-logoo.png"
+            alt="Logo da Minha Empresa"
+          />
+        </a>
+      </nav>
+
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav class="cabecalho-menu">
+        <a class="cabecalho-menu-link" href="index.html">Home</a>
+        <a class="cabecalho-menu-link" href="about.html">Sobre</a>
+        <a class="cabecalho-menu-link cabecalho-invisivel" href="#">Casacos</a>
+        <a class="cabecalho-menu-link cabecalho-invisivel" href="#"
+          >Saídas de Praia</a
+        >
+        <a class="cabecalho-menu-link cabecalho-invisivel" href="#">Blusas</a>
+        <a class="cabecalho-menu-link cabecalho-invisivel" href="#">Saias</a>
+        <a class="cabecalho-menu-link cabecalho-invisivel" href="#">Vestidos</a>
+        <a class="cabecalho-menu-link" href="contact.html">Contato</a>
+        <div class="dropdown-container">
+          <a class="cabecalho-menu-link dropdown-button">Roupas</a>
+          <div class="dropdown-content">
+            <a href="#">Casacos</a>
+            <a href="#">Saídas de Praia</a>
+            <a href="#">Blusas</a>
+            <a href="#">Saias</a>
+            <a href="#">Vestidos</a>
+          </div>
+        </div>
+
+        <button id="botao-fazer-login-toggle" onclick="exibirLoginFlutuante()">
+          Fazer Login
+        </button>
+      </nav>
+
+      <nav class="cabecalho-login">
+        <input type="text" class="cabecalho-login-input" placeholder="Login" />
+        <input
+          type="password"
+          class="cabecalho-login-input"
+          placeholder="Senha"
+        />
+        <button
+          class="cabecalho-login-button"
+          onclick="window.location.href='login.html'"
+        >
+          Entrar
+        </button>
+      </nav>
+
+      <nav class="cabecalho-login-flutuante">
+        <input
+          type="text"
+          class="cabecalho-login-input-flutuante"
+          placeholder="Login"
+        />
+        <input
+          type="password"
+          class="cabecalho-login-input-flutuante"
+          placeholder="Senha"
+        />
+        <button
+          class="cabecalho-login-button-flutuante"
+          onclick="window.location.href='login.html'"
+        >
+          Entrar
+        </button>
+      </nav>
+    </header>
+    <a class="botao-voltar-area-trabalho" href="login.html">
+      <- Voltar para a Área de Trabalho</a
+    >
+
+    <a class="botao-voltar-area-trabalho" href="cadastro.html">
+      Cadastro de Roupas</a
+    >
+    <div id="div-botao-listagem">
+      <h1>Listagem de Estoque</h1>
+      <button id="botao-listar" onclick="exibirEstoque()">
+        Exibir Estoque
+      </button>
+    </div>
+
+    <ul id="lista"></ul>
+  </body>
+</html>
